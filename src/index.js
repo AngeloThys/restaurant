@@ -1,6 +1,5 @@
 import css from "./style.css";
-import initialLoad from "./initialLoad.js";
+import homeLoadContent from "./home";
+import menuLoadContent from "./menu";
+import contactLoadContent from "./contact";
 
-initialLoad();
-
-console.log("howdy");
