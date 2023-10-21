@@ -121,5 +121,96 @@ body {
   place-self: start;
 }
 
-/* HOME CONTACT */
+/* CONTACT TAB */
 
+.contact-content {
+  display: grid;
+  grid-template-areas:
+    "image location"
+    "schedule information";
+  grid-template-columns: 1fr auto;
+  gap: 24px;
+}
+
+.contact-content img {
+  place-self: center end;
+  grid-area: image;
+  height: 600px;
+  width: auto;
+}
+
+.contact-content .location {
+  height: 100%;
+  grid-area: location;
+  justify-self: center;
+  text-align: justify;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contact-content .schedule {
+  grid-area: schedule;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.schedule h2 {
+  margin: 0;
+}
+
+.schedule span {
+  font-weight: 700;
+}
+
+.schedule p {
+  display: inline;
+  margin: 0;
+}
+
+.schedule ul {
+  padding: 0;
+  margin: 0;
+}
+
+.schedule li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-content .information {
+  grid-area: information;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.information p {
+  display: inline;
+  margin: 0;
+}
+
+.information h2 {
+  margin: 0;
+}
+
+.information span {
+  font-weight: 700;
+}
+
+.information ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.information li {
+  list-style: none;
+}
